@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ro.iml" filepath="$PROJECT_DIR$/.idea/ro.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../rbs/ro_r4j/ro_r4j.iml" filepath="$PROJECT_DIR$/../../rbs/ro_r4j/ro_r4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ro.iml" filepath="$PROJECT_DIR$/ro.iml" />
     </modules>
   </component>
 </project>
-
