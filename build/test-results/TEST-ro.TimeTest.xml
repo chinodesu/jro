@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.TimeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-25T05:06:13" hostname="zhy" time="4.267">
+  <properties/>
+  <testcase name="testNow" classname="ro.TimeTest" time="3.402"/>
+  <testcase name="testInterval" classname="ro.TimeTest" time="0.865"/>
+  <system-out><![CDATA[r:ro.Time@68a26faa		NativeConstructorAccessorImpl.java:-2
+11624777		NativeConstructorAccessorImpl.java:-2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

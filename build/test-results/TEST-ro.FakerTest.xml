@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.FakerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-03-25T05:06:09" hostname="zhy" time="0.989">
+  <properties/>
+  <testcase name="testF" classname="ro.FakerTest" time="0.989"/>
+  <system-out><![CDATA[mkdirF:\Dropbox\win\ro\tmp\test\dirseparator: 		NativeConstructorAccessorImpl.java:-2
+writeF:\Dropbox\win\ro\tmp\test\dir\File.javaseparator: 		NativeConstructorAccessorImpl.java:-2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

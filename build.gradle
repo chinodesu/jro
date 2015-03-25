@@ -1,28 +1,58 @@
 apply plugin: 'idea'
-
-apply plugin: 'java'
+apply plugin: 'groovy'
 
 repositories {
     mavenCentral()
 }
 
+sourceCompatibility = 1.8
+
 dependencies {
-    compile 'com.google.guava:guava:18.0'
-    compile 'commons-io:commons-io:2.4'
-    compile 'com.google.code.gson:gson:2.3'
-    compile 'org.apache.commons:commons-lang3:3.3.2'
-    compile 'com.squareup.okhttp:okhttp:2.0.0'
-    compile 'com.google.code.findbugs:jsr305:3.0.0'
-    compile 'org.json:json:20140107'
-    compile 'junit:junit:4.11'
-    compile 'org.mockito:mockito-all:1.9.5'
+//    compile 'org.codehaus.groovy:groovy-all:2.3.9'
+    compile localGroovy()
+    compile 'com.google.guava:guava:+'
+    compile 'commons-io:commons-io:+'
+    compile 'com.google.code.gson:gson:+'
+    compile 'org.apache.commons:commons-lang3:+'
+    compile 'com.squareup.okhttp:okhttp:+'
+    compile 'com.google.code.findbugs:jsr305:+'
+    compile 'org.json:json:+'
+    compile 'junit:junit:+'
+    compile 'org.mockito:mockito-core:+'
+    compile 'joda-time:joda-time:+'
+//    compile 'org.spockframework:spock-core:1.0-groovy-2.3'
 }
 
 group = "ro"
 version = "1.0"
+
+//compileJava.onlyIf { rootProject.name == 'ro' }
+//compileGroovy.onlyIf { rootProject.name == 'ro' }
+//processResources.onlyIf { rootProject.name == 'ro' }
+//classes.onlyIf { rootProject.name == 'ro' }
+//jar.onlyIf { rootProject.name == 'ro' }
+//assemble.onlyIf { rootProject.name == 'ro' }
+compileTestJava.onlyIf { rootProject.name == 'ro' }
+compileTestGroovy.onlyIf { rootProject.name == 'ro' }
+test.onlyIf { rootProject.name == 'ro' }
+//check.onlyIf { rootProject.name == 'ro' }
+//build.onlyIf { rootProject.name == 'ro' }
 
 test {
     onlyIf {
         rootProject.name == "ro"
     }
 }
+
+task tryGradle() {
+    println "try"
+}
+
+test {
+//    afterTest { desc, r ->
+//        println "desc: ${desc}"
+//        println "r: ${r}"
+//    }
+}
+
+
